@@ -28,6 +28,7 @@ public class SingleTaskForMultipleThreads implements Runnable {
 
 	public void run() {
 		phaser.arriveAndAwaitAdvance();
+		
 		System.out.println(Thread.currentThread().getName()+ " - START");
 		
 		if(Thread.currentThread().getName().equals("Thread-1")) {

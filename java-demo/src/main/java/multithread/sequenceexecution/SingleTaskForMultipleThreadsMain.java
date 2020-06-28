@@ -17,8 +17,7 @@ public class SingleTaskForMultipleThreadsMain {
 		Phaser phaser = new Phaser(5);
 		SingleTaskForMultipleThreads singleTask = new SingleTaskForMultipleThreads(phaser);
 		
-		
-		Thread t1 = new Thread(singleTask);
+		Thread t1 = new Thread(singleTask); 
 		Thread t2 = new Thread(singleTask);
 		Thread t3 = new Thread(singleTask);
 		Thread t4 = new Thread(singleTask);
